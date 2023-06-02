@@ -1,0 +1,5 @@
+{
+    "codegpt.promptPrefix.explain": "Explain what this code does: Spanish",
+    "codegpt.apiKey": "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",
+    "java.debug.settings.onBuildFailureProceed": true
+}
