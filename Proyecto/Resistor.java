@@ -1,11 +1,11 @@
 package Proyecto;
+import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Resistor{
-    private Color[] colors;
 
-    public Resistor(Color[] colors) {
-        this.colors = colors;
-    }
     public double getResistance() {
         int firstDigit = (int) colors[0].getvalor();
         int secondDigit = (int) colors[1].getvalor();

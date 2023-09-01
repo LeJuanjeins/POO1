@@ -1,28 +1,43 @@
 package Proyecto;
 import java.util.Scanner;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Main {
+    private static Connection conn;
+
+    public static Connection getConnection() throws SQLException {
+        String host = "127.0.0.1";
+        String user = "root";
+        String password = " ";
+        int port = 3306;
+        String database = "mibase";
+        String url = String.format("jdbc:mysql://%s/%s", host, database);
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (Exception e) {
+            System.out.println("Libreria no encontrada: " + e.getMessage());
+        }
+
+        conn = DriverManager.getConnection(url, user, password);  
+        return conn;  
+    }
+
     public static void main(String[] args) {
+        
         try (Scanner scanner = new Scanner(System.in)) {
-            // Create a resistor with color bands brown, black, and red
-             
-            
-            
-             // Create an inductor with color bands orange, white, and black
-             Color[] inductorColors = {new Color("orange", 3), new Color("white", 9), new Color("black", -1)};
-             
-            System.out.println("Ingrese que desea calcular respectivamente (R)esistor, (I)nductor o (C)apacitor");
+            System.out.println("Ingrese que desea calcular respectivamente (R)esistor, (I)nductor o (C)apacitor"); //
             char operando = scanner.next().charAt(0);
-            if (operando == 'r'){
-                
-                Color[] resistorColors = {new Color("brown", 1), new Color("black", 0), new Color("red", 2)};
-                Resistor resistor = new Resistor(resistorColors);
+            if (operando == 'r'){                
+                Resistor resistor = new Resistor();
 
                 double resistance = resistor.getResistance();
                 System.out.println(resistance);
 
             } else if (operando == 'i'){
-                Inductor inductor = new Inductor(inductorColors);
+                Inductor inductor = new Inductor();
             
                 // Calculate the inductance of the inductor
                 double inductance = inductor.getInductance();

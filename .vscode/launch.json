@@ -1,0 +1,105 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "EjemploEje.Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Conjunta.Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Conjunta1.Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
+            "mainClass": "IngresoConsola.Principal",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "Parcial2.ArrayObjetos.Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Principal(1)",
+            "request": "launch",
+            "mainClass": "Parcial2.Clase12Junio.Principal",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "BeautyPageantContest",
+            "request": "launch",
+            "mainClass": "Parcial2.Reina.BeautyPageantContest",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Principal(2)",
+            "request": "launch",
+            "mainClass": "Principal",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "Proyecto.Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "Prueba.Main",
+            "projectName": "GITHUB_770acb44"
+        },
+        {
+            "type": "java",
+            "name": "Principal(3)",
+            "request": "launch",
+            "mainClass": "Repaso.Principal",
+            "projectName": "GITHUB_770acb44"
+        }
+    ]
+}
